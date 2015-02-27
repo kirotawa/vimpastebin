@@ -1,6 +1,10 @@
 # vimpastebin
 A simple plugin to send your selected code on vim to osuosl.org pastebin
 
+### Install
+
+Copy vpaste .py and .vim to your $HOME/.vim/plugin folder
+
 ### How does it work?
 
 1. Enter in visual mode
