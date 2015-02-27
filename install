@@ -1,0 +1,6 @@
+#!/bin/bash
+
+DIR_PLUGIN=$HOME/.vim/
+
+cp -r plugin doc $DIR_PLUGIN
+
