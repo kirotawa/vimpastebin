@@ -1,0 +1,4 @@
++ vim pastebin - just a simple plugin to let you paste without abadon the code
++ You won't need to leave vim and go to the browser, just use F5 and grab the
+nice url from osuosl.org pastebin.
+
