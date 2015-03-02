@@ -2,7 +2,7 @@ if !has('python')
 	finish
 endif
 
-let $vimdir="~/.vim/plugin/"
+let $vimdir="~/.vim/plugin/vpaste/"
 
 vnoremap <silent> <F5> :<C-U>PASTE<CR>
 
