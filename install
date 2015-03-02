@@ -2,5 +2,13 @@
 
 DIR_PLUGIN=$HOME/.vim/
 
-cp -r plugin doc $DIR_PLUGIN
-
+if [ -d $DIR_PLUGIN ]
+then
+	echo "Installing..."
+	cp -r plugin doc $DIR_PLUGIN
+else
+	echo "Creating a .vim folder"
+	mkdir $DIR_PLUGIN
+	echo "Installing..."
+	cp -r plugin doc $DIR_PLUGIN
+fi
