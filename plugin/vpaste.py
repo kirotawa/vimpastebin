@@ -23,6 +23,7 @@ lang_name = {
     'rb': 'ruby',
     'pl': 'perl',
     'S': 'asm',
+    's': 'asm',
     'diff': 'diff'
 }
 
