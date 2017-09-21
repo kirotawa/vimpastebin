@@ -1,8 +1,13 @@
-#!/usr/bin/python
 
 import vim
 import json
-import urllib
+
+from future.standard_library import install_aliases
+install_aliases()
+
+from urllib.parse import urlparse, urlencode
+from urllib.request import urlopen, Request
+from urllib.error import HTTPError
 
 data = {
     'paste_data': '',
@@ -55,9 +60,9 @@ for code_line in buffer_code:
         code_to_paste += '\n'
 
 data['paste_data'] = code_to_paste
-response = urllib.urlopen(URL_BASE, urllib.urlencode(data))
+response = urlopen(URL_BASE, urlencode(data).encode('utf-8'))
 
-result = response.read()
+result = response.read().decode('utf-8')
 url_result = json.loads(result)
 
-print URL_BASE+'/'+url_result['result']['id']
+print(URL_BASE+'/'+url_result['result']['id'])

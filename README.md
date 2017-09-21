@@ -4,6 +4,10 @@ A simple plugin to send your selected code on vim to https://pastebin.osuosl.org
 
 ### Install
 
+Dependences:
+ pip install future
+ pip3 install future
+
 Just run ./install
 
 ### How does it work?
